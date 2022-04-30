@@ -14,6 +14,6 @@ app.get("/", (req, res) => {
   res.send({ greeting: "Hello world!" });
 });
 
-const listener = app.listen(process.env.PO_PORT || 3002, () => {
+const listener = app.listen(process.env.PORT || 5000, () => {
   console.log("Your app is listening on port " + listener.address().port);
 });
