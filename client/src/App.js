@@ -22,7 +22,7 @@ const App = () => {
   const checkCorrectNess = async () => {
     try {
       setLoader(true);
-      const response = await axios.post("check-correctness", { message });
+      const response = await axios.post("/api/v1/check-correctness", { message });
       const { data } = response;
       setWords(data?.words || []);
       setInvalid(data?.words?.length > 0 || false);

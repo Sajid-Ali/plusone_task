@@ -4,9 +4,7 @@ const checkCorrectNess = async (req, res, next) => {
   try {
     let words = [];
     const { message } = req.body;
-    const source = await axios.get(
-      "https://raw.githubusercontent.com/jeremy-rifkin/Wordlist/master/master.txt"
-    );
+    const source = await axios.get(process.env.PO_DATA_URL);
     const result = source?.data.split(/\r?\n?\s+/g);
     const input = message.split(" ");
     for (let i = 0; i < input.length; i++) {
