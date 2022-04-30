@@ -42,6 +42,7 @@ const App = () => {
         name="text"
         type="textarea"
         valid={valid}
+        disabled={loader}
         invalid={invalid}
         onChange={(e) => setMessage(e.target.value)}
       />
