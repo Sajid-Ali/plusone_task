@@ -2,10 +2,10 @@
   "name": "plusone_server",
   "version": "1.0.0",
   "description": "Basic Node API for English correction",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
-    "start": "npm run heroku-postbuild && node server.js",
+    "start": "concurrently \"npm run heroku-postbuild\" \"node server.js\"",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
