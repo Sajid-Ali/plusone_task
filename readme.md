@@ -48,6 +48,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://devcenter.heroku.com/articles/git](https://devcenter.heroku.com/articles/git)
 
+### [Live Demo](http://plusone-english-check.herokuapp.com/)
+
 
 <br />
 <br />
